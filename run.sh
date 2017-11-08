@@ -1,4 +1,4 @@
-"#!/bin/sh
+"#!/bin/bash
 
 wget http://192.168.56.104:8081/repository/maven-snapshots/Sample/sample/maven-metadata.xml -O baseVersion.xml
 
