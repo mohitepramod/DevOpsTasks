@@ -1,4 +1,4 @@
-"#!/bin/bash
+#!/bin/bash
 
 wget http://192.168.56.104:8081/repository/maven-snapshots/Sample/sample/maven-metadata.xml -O ./opt/baseVersion.xml
 
@@ -21,4 +21,4 @@ echo "$TEMP_VERSION"
 FINAL_VERSION=$(echo "${TEMP_VERSION}" | sed -e 's/<value>\(.*\)<\/value>/\1/' | sed -e 's/ //g')
 echo "$FINAL_VERSION"
 
-wget 'http://192.168.56.104:8081/repository/maven-snapshots/Sample/sample/'${BASE_VER}'/sample-'${FINAL_VERSION}'.jar' -O  ./opt/sample.jar"
+wget 'http://192.168.56.104:8081/repository/maven-snapshots/Sample/sample/'${BASE_VER}'/sample-'${FINAL_VERSION}'.jar' -O  ./opt/sample.jar
