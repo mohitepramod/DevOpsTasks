@@ -43,7 +43,7 @@ echo "$FINAL_VERSION"
 
 
 wget 'http://192.168.56.104:8081/repository/maven-snapshots/Sample/sample/'${BASE_VER}'/sample-'${FINAL_VERSION}'.jar' -O  sample.jar
-java -cp sample.jar code.main.App
+
 
 
 
